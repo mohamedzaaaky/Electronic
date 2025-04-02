@@ -1,0 +1,545 @@
+/* ========== Admin Aside ========== */
+.admin aside {
+  background-color: var(--white);
+  min-width: 290px;
+  box-shadow: var(--shadow);
+  min-height: 100vh;
+  position: static;
+  padding-right: 20px;
+  z-index: 3;
+  transition: all 0.3s ease;
+}
+
+/* ========== Admin Aside Menu ========== */
+.admin aside ul button {
+  padding: 8px 15px 8px 25px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  font-size: 20px;
+  color: var(--text-dark);
+  font-weight: bold !important;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+
+.icon-link-sidebar {
+  fill: var(--primary) !important;
+  transition: all 0.3s ease;
+}
+
+.admin aside ul .section-toggle ul li a {
+  padding: 8px 0 8px 40px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+  border: none;
+  text-align: start;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.admin aside ul .section-toggle ul li a::before {
+  content: "";
+  position: absolute;
+  transform: translateY(50%);
+  top: 10px;
+  left: 20px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #ccc;
+}
+
+.admin aside ul button:hover {
+  background-color: rgba(0, 123, 255, 0.4) !important;
+  color: #fff;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+}
+
+.admin aside ul button:hover .icon-link-sidebar {
+  fill: #fff !important;
+}
+.admin aside ul .dashboard-link {
+  padding: 8px 0 8px 24px !important;
+}
+
+.admin aside ul .dashboard-link::before {
+  left: 10px !important;
+}
+
+.submenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.submenu.open {
+  max-height: 500px;
+  transition: max-height 0.3s ease-in;
+}
+.admin .content {
+  width: 100%;
+}
+/* ========== Admin Top Nav ========== */
+.admin-top-nav {
+  /* background-color: var(--bg-white); */
+  /* border-bottom: 1px solid var(--border-color-light); */
+  padding: 10px 20px;
+  box-shadow: var(--shadow);
+  border-radius: 8px;
+}
+
+.admin-top-nav h5 {
+  color: var(--text-dark);
+}
+
+.admin-top-nav img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: bottom;
+}
+
+.admin-top-nav svg {
+  color: var(--primary);
+}
+
+/* ========== Dynamic Table ========== */
+.dynamic_table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dynamic_table th,
+.dynamic_table td {
+  padding: 12px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.dynamic_table img {
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* ========== Shared Form ========== */
+
+.dashboard_form h3 {
+  color: var(--primary);
+  margin: 15px 0;
+}
+
+.dashboard_form label {
+  margin-bottom: 15px;
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.shared_form {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.dashboard_form .form-group {
+  margin-bottom: 15px;
+}
+
+.shared_form .form-group input[type="text"],
+.shared_form .form-group input[type="file"] {
+  width: 100%;
+  display: block;
+}
+
+.input-group input[type="file"] {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+}
+
+.shared_form button {
+  width: 150px;
+  display: flex;
+  border: none;
+  padding: 10px;
+  background-color: var(--primary);
+  color: #fff;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.drop-zone {
+  width: 100%;
+
+  padding: 20px;
+  border: 2px dashed #ced4da;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.drop-zone p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-muted-light);
+  transition: all 0.3s ease;
+}
+
+.file-input {
+  display: none;
+}
+
+.preview-img {
+  max-width: 100px;
+  border-radius: 10px;
+}
+
+.remove_img_icon {
+}
+/* ========== Main ========== */
+
+/* .sales .sales-item {
+  border-radius: 20px;
+  color: var(--text-dark);
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  background-color: var(--card-foreground);
+}
+
+.sales .sales-item:hover {
+  color: #fff;
+  transition: all 0.3s ease;
+  background-color: var(--primary);
+} */
+
+/* ================== Order Details List ============== */
+/* 
+.details-orders-customers {
+  position: relative;
+  width: 100%;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 30px;
+}
+
+.details-orders-customers .recentOrders,
+.recentCustomers {
+  min-height: 500px;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  background: var(--card-foreground);
+}
+
+.cardHeader h2 {
+  font-weight: 600;
+  color: var(--primary);
+}
+.cardHeader .btn {
+  padding: 5px 10px;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 6px;
+}
+
+.details-orders-customers table thead td {
+  font-weight: 600;
+}
+.details-orders-customers .recentOrders table tr {
+  color: var(--text-dark);
+  transition: all 0.3 ease;
+  border-bottom: 1px solid var(--border-color);
+}
+.details-orders-customers .recentOrders table tr:last-child {
+  border-bottom: none;
+}
+.details-orders-customers .recentOrders table tbody tr:hover {
+  color: #fff;
+  transition: all 0.3 ease;
+  background: var(--primary);
+}
+.details-orders-customers .recentOrders table tr td {
+  padding: 10px;
+}
+.details-orders-customers .recentOrders table tr td:last-child,
+.details-orders-customers .recentOrders table tr td:nth-child(2) {
+  text-align: end;
+}
+
+.details-orders-customers .recentOrders table tr td:nth-child(3) {
+  text-align: center;
+} */
+
+/* Order Status */
+/* .status.delivered {
+  background: #8de02c;
+}
+.status.pending,
+.status.return,
+.status.inProgress {
+  padding: 2px 4px;
+  background: #e9b10a;
+  color: var(--white);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.status.return {
+  background: #f00;
+}
+.status.inProgress {
+  background: #1795ce;
+} */
+
+/*  ========= Recent Customers ========= */
+/* 
+.recentCustomers .imgBx {
+  width: 40px;
+  height: 40px;
+}
+
+.recentCustomers table tr td {
+  padding: 12px 10px;
+  transition: all 0.3s ease;
+}
+.recentCustomers table tr td h4 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2rem;
+  color: var(--text-dark);
+}
+.recentCustomers table tr td h4 span {
+  font-size: 14px;
+  color: var(--text-muted-light);
+}
+
+.recentCustomers table tr:hover {
+  background: var(--primary);
+}
+.recentCustomers table tr:hover td h4 span,
+.recentCustomers table tr:hover td h4 {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 991px) {
+  .admin aside {
+    position: fixed;
+    transform: translateX(-100%) !important;
+    top: 0;
+    height: 100vh;
+    transition: transform 0.3s ease;
+  }
+
+  .admin .content {
+    margin-left: 0;
+  }
+}
+
+aside.open {
+  transform: translateX(0) !important;
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 991px) {
+  .details-orders-customers {
+    grid-template-columns: 1fr;
+  }
+  .recentOrders {
+    overflow-x: auto;
+  }
+  .status.inProgress {
+    white-space: nowrap;
+  }
+} */
+
+/* ================== Management ============== */
+
+.icon-btn {
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--border-color-light);
+  background: var(--card-foreground);
+  border-radius: 25px;
+  transition: width 0.2s ease-in-out;
+  display: block;
+  margin-left: auto;
+}
+
+.add-btn:hover {
+  width: 200px;
+}
+
+.add-btn::before,
+.add-btn::after {
+  transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 10px;
+  top: calc(50% - 2px);
+  background: var(--primary);
+}
+
+.add-btn::after {
+  right: 14px;
+  overflow: hidden;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.add-btn::before {
+  left: 14px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.icon-btn:focus {
+  outline: none;
+}
+
+.btn-txt {
+  opacity: 0;
+  transition: opacity 0.2s;
+  color: #1795ce;
+}
+
+.add-btn:hover::before,
+.add-btn:hover::after {
+  width: 4px;
+  border-radius: 2px;
+}
+
+.add-btn:hover .btn-txt {
+  opacity: 1;
+}
+
+.add-icon::after,
+.add-icon::before {
+  transition: all 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 2px;
+  top: calc(50% - 10px);
+  background: var(--primary);
+  overflow: hidden;
+}
+
+.add-icon::before {
+  left: 22px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.add-icon::after {
+  right: 22px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.add-btn:hover .add-icon::before {
+  left: 15px;
+  height: 4px;
+  top: calc(50% - 2px);
+}
+
+.add-btn:hover .add-icon::after {
+  right: 15px;
+  height: 4px;
+  top: calc(50% - 2px);
+}
+
+/* Form */
+/* 
+.overlay-form {
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay-form .form-container {
+  background-color: var(--card-foreground);
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.overlay-form .form-container h3 {
+  margin-bottom: 20px;
+  color: var(--primary);
+}
+.overlay-form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--text-dark);
+}
+
+.overlay-form .form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--border-color-light);
+  border-radius: 4px;
+  background-color: var(--card-foreground);
+  color: var(--text-dark);
+}
+
+.overlay-form .form-group input:focus {
+  width: 100%;
+  padding: 8px;
+  border-color: var(--primary);
+  outline: none;
+}
+
+.overlay-form .form-group {
+  margin-bottom: 15px;
+}
+
+.overlay-form .form-control {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+}
+.overlay-form button {
+  padding: 8px 20px;
+  border-radius: 36px;
+  background-color: var(--primary);
+  color: #fff;
+  width: 150px;
+  border: none;
+}
+
+.overlay-form .is-invalid {
+  border-color: red;
+}
+
+.overlay-form .invalid-feedback {
+  color: red;
+  font-size: 12px;
+}
+
+.overlay-form .close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--primary);
+}
+
+.overlay-form .close-icon:hover {
+  color: red;
+}
+
+.image-preview .preview-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 10px;
+} */

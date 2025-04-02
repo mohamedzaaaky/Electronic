@@ -1,0 +1,67 @@
+footer {
+  padding: 100px 0 20px 0;
+  width: 95%;
+  border-radius: 30px;
+  box-shadow: var(--shadow);
+}
+
+footer h2 {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+footer svg {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding: 9px;
+  color: var(--primary);
+  background-color: #eff5fc;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(2, 37, 84, 0.1);
+}
+
+footer svg:hover {
+  color: #fff;
+  transition: all 0.3s ease;
+  background-color: var(--primary);
+}
+
+footer h5 {
+  color: var(--secondary);
+  font-weight: 700;
+  font-size: 18px;
+}
+footer ul li {
+  list-style: none;
+  text-align: start;
+  line-height: 2;
+  color: #00000099;
+}
+
+footer ul li a:hover {
+  color: var(--primary);
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+footer li a {
+  transition: all 0.3s ease;
+  color: var(--text-dark);
+}
+
+.copyRight-desc {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text-dark);
+}
+
+@media (max-width: 1200px) {
+  footer {
+    width: 100%;
+  }
+}

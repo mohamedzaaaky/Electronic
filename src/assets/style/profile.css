@@ -1,0 +1,202 @@
+.sideBar-profile {
+  border-radius: 12px;
+  padding: 10px;
+  min-height: 250px;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  background-color: var(--card-foreground);
+}
+
+.sideBar-profile h4 {
+  color: var(--primary);
+}
+
+.sideBar-profile ul li a {
+  width: 100%;
+  display: block;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--secondary);
+}
+
+.sideBar-profile ul li a:hover {
+  color: var(--primary);
+  transition: all 0.3s ease;
+}
+
+.sideBar-profile ul li a.active-link-profile {
+  background-color: var(--primary);
+  color: #fff;
+  box-shadow: var(--shadow);
+  border-radius: 6px;
+}
+
+.sideBar-profile img {
+  max-width: 200px !important;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* ===================== update image ===================== */
+
+.icon-update-image {
+  transform: translateX(-50%);
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: var(--primary);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.icon-update-image:hover {
+  padding: 15px;
+}
+
+/* ====================== Profile user ====================== */
+
+.user-information {
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.user-information .item p {
+  color: var(--text-dark);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.user-information .item span,
+.user-information label {
+  font-weight: 300;
+}
+
+/* ====================== update form ====================== */
+
+.user-information label {
+  color: var(--text-dark);
+  width: 150px;
+}
+
+.user-information .form-group.update input {
+  color: var(--text-dark);
+  border: none;
+  border-radius: 0 !important;
+  border-bottom: 1px solid var(--border-color-light);
+  margin: 15px 0;
+  background-color: var(--card-foreground);
+}
+
+.user-information .form-group.update input:focus {
+  outline: none;
+  box-shadow: var(--shadow);
+  background-color: var(--card-foreground);
+  border-bottom-color: var(--primary);
+}
+
+.user-information input {
+  padding: 10px 14px;
+  border-radius: 7px;
+  border: 1px solid var(--border-color);
+}
+
+.user-information button {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: var(--shadow);
+  width: 150px;
+}
+
+.user-information .form-group.update .error-msg {
+  bottom: -20px;
+  left: 165px;
+}
+/* ==================== Change Password ==================== */
+.change-password {
+  max-width: 500px;
+}
+
+.user-information h2,
+.change-password h2 {
+  color: var(--primary);
+}
+
+.change-password [type="submit"] {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: var(--shadow);
+}
+.change-password input {
+  background-color: var(--card-foreground);
+  color: var(--text-dark) !important;
+}
+
+.change-password label {
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.change-password .input-group .btn-outline-secondary {
+  border-color: #ced4da;
+}
+
+.change-password .input-group .btn-outline-secondary:hover {
+  background-color: #f8f9fa;
+}
+
+.change-password .form-control:focus {
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.form-control:focus::placeholder {
+  color: #ced4da;
+}
+.is-invalid {
+  border-color: #dc3545;
+}
+::placeholder {
+  color: #ced4da !important;
+}
+
+.is-invalid:focus {
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  .change-password input {
+    width: 100%;
+  }
+  .change-password .item {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+
+  .sideBar-profile {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    z-index: 3;
+  }
+  .visible-sidebar-profile {
+    transform: translateX(-100%);
+  }
+  .not-visible-sidebar-profile {
+    transform: translateX(0%) !important;
+  }
+}
+
+button:disabled {
+  opacity: 0.5;
+}

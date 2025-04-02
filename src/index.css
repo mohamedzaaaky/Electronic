@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  /* background */
+  --background: #ffff;
+  --foreground: #fff;
+  --bg-header: #022554;
+  --card-foreground: #fff;
+
+  --primary: #0088ff;
+  --secondary: #2a2185;
+
+  --text-light: #f5f5f5;
+  --text-dark: #333;
+  --text-muted-light: #212529bf;
+  --destructive: #ff0000;
+
+  --shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.05);
+  --border-color: rgba(160, 162, 162, 0.15);
+  --border-color-light: #e1dde7;
+}
+
+/* Dark Mode Colors */
+[data-theme="dark"] {
+  --background: #031833;
+  --foreground: #17153b;
+  --bg-header: #031833;
+  --card-foreground: #031833;
+
+  --secondary: #f5f5f5;
+
+  --text-light: #333;
+  --text-dark: #f5f5f5;
+  --text-muted-light: #f8f8f873;
+
+  --shadow: 0 1px 3px rgba(255, 255, 255, 0.05),
+    0 2px 5px rgba(255, 255, 255, 0.03);
+  --border-color-light: rgba(160, 162, 162, 0.15);
+}
+
+body {
+  background-color: var(--background);
+  font-family: "inter", sans-serif;
+}

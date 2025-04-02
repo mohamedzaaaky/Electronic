@@ -1,0 +1,25 @@
+.brand {
+  box-shadow: var(--shadow);
+  border-radius: 20px;
+}
+
+.brand img {
+  transition: all 0.3s ease;
+}
+
+.brand a {
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--secondary);
+  transition: all 0.3s ease;
+}
+
+.brand:hover a {
+  color: var(--primary);
+  transition: all 0.3s ease;
+}
+
+.brand:hover img {
+  scale: 1.1;
+  transition: all 0.3s ease;
+}

@@ -1,0 +1,341 @@
+.single-product {
+  background-color: var(--card-foreground);
+  box-shadow: var(--shadow);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  padding: 20px;
+}
+
+.single-product h4 {
+  cursor: pointer;
+  z-index: 2;
+  color: var(--secondary);
+  transition: all 0.3s ease;
+}
+
+.single-product .price > * {
+  font-size: 24px;
+  line-height: 29.5px;
+}
+
+.single-product .price .old-price {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.single-product .price .discount {
+  font-size: 12px;
+  line-height: 14.52px;
+  font-weight: 500;
+  padding: 5px 10px;
+}
+
+.single-product .old-price,
+.single-product .new-price {
+  color: var(--text-dark);
+}
+
+.single-product svg {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Over-lay */
+.single-product .over-lay {
+  transition: all 0.3s ease, z-index 0.3s ease;
+}
+
+.single-product .over-lay button {
+  font-weight: 400;
+  padding: 10px 20px;
+  border-radius: 36px;
+  color: #fff;
+  background-color: var(--primary);
+  opacity: 0;
+  transition: all 0.3s ease, opacity 0.3s ease;
+}
+
+.single-product .over-lay button:hover {
+  background-color: #022554;
+  color: #ffffff;
+}
+
+.single-product .over-lay ul {
+  right: 10px;
+  bottom: 30px;
+  transform: translateX(50px);
+  transition: transform 0.3s ease;
+}
+
+/* Over-lay when hover */
+.single-product:hover .over-lay {
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.single-product:hover .over-lay ul {
+  transform: translateX(0);
+}
+
+.single-product:hover .over-lay button {
+  opacity: 1;
+}
+
+.single-product:hover .over-lay svg {
+  color: var(--primary);
+}
+
+/* ======================================================== product-details ======================================================== */
+
+.product-details .images img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+}
+.product-details figure {
+  border-radius: 10px;
+  padding: 20px;
+  background-color: var(--card-foreground);
+}
+
+.product-details .product-data h3 {
+  line-height: 44.5px;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.product-details .product-data p.descriptions {
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 2;
+  color: var(--secondary);
+}
+
+.product-details .product-data h4 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29.5px;
+  margin-bottom: 20px;
+  color: var(--text-muted-light);
+}
+
+.product-details .product-data button {
+  padding: 10px 20px;
+  border-radius: 36px;
+  width: 200px;
+  background-color: var(--primary);
+  margin-right: 5px;
+  transition: all 0.3s ease;
+}
+
+.product-details .product-data button:hover {
+  background-color: #022554;
+  transition: all 0.3s ease;
+}
+
+.product-details button svg {
+  color: #fff !important;
+}
+
+.product-details .product-data .icon-wishlist {
+  color: #fff;
+  background-color: var(--primary);
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.product-details .quantity button:hover {
+  background-color: var(--primary);
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+.product-details .product-data span {
+  color: var(--text-muted-light);
+}
+
+/* ============================ nav-tabs product details ============================  */
+.nav-tabs .nav-link {
+  color: var(--text-muted-light);
+  background-color: var(--card-foreground);
+  border: 1px solid var(--border-color);
+  margin: 0 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-bottom: 0;
+}
+
+.nav-tabs .nav-link.active {
+  color: #fff;
+  background-color: var(--primary);
+  border-color: var(--border-color);
+  border-bottom: none;
+}
+
+.tab-content {
+  padding: 30px 10px;
+  background-color: var(--card-foreground);
+  border: 1px solid var(--border-color-light);
+  border-radius: 12px;
+}
+
+.tab-content .content {
+  padding: 10px 20px !important;
+  margin-top: 40px !important;
+}
+
+.tab-content .content figure {
+  width: 100px;
+}
+
+.tab-content .reviews .content,
+.add-reviews {
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid var(--border-color-light);
+  border-radius: 12px;
+  position: relative;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tab-content .reviews svg {
+  cursor: pointer;
+}
+
+.tab-content h2,
+.tab-content h6 {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--primary);
+}
+
+.tab-content h6 {
+  color: var(--primary);
+  margin-left: 20px;
+}
+
+.tab-content p {
+  color: var(--text-muted-light);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 2;
+  margin-left: 20px;
+}
+
+/* ============================== add-reviews ============================= */
+
+.add-reviews textarea {
+  width: 60%;
+  height: 100px;
+  padding: 5px 10px;
+  background-color: var(--header-bg);
+  color: var(--secondary);
+  border: 1px solid var(--border-color-light);
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+.add-reviews textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.add-reviews button {
+  margin-top: 3px;
+  padding: 8px 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.add-reviews button:hover {
+  background-color: #022554;
+}
+
+.star-reviews {
+  color: var(--text-muted-light);
+}
+
+.img-preview {
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+}
+
+/* ============================ product-list dashboard ============================ */
+
+/* ============================ product-form ============================ */
+
+.overlay-form-product {
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.overlay-form-product form {
+  background-color: var(--card-foreground);
+  padding: 20px;
+  border-radius: 10px;
+  max-height: 90%;
+  overflow-y: auto;
+  width: 60%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.overlay-form-product input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--border-color-light);
+  border-radius: 4px;
+  background-color: var(--card-foreground);
+  color: var(--text-dark);
+}
+.overlay-form-product select {
+  background-color: var(--card-foreground);
+  color: var(--text-dark);
+  border: 1px solid var(--border-color-light);
+}
+
+.overlay-form-product input:focus {
+  background-color: var(--card-foreground);
+}
+
+.overlay-form-product h3 {
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.overlay-form-product label {
+  color: var(--text-muted-light);
+  margin: 10px 0;
+}
+
+.overlay-form-product svg {
+  color: var(--primary);
+  cursor: pointer;
+  top: 20px;
+  right: 20px;
+}
+
+/* Responsive */
+@media screen and (max-width: 991px) {
+  .tab-content .reviews .content,
+  .add-reviews {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .tab-content h6 {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .overlay-form-product form {
+    width: 90%;
+  }
+}
